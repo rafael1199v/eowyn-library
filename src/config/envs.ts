@@ -10,6 +10,8 @@ export const envs = {
 
   JWT_SEED: get('JWT_SEED').required().asString(),
 
+  TOKEN_EXPIRES_IN: get('TOKEN_EXPIRES_IN').default('2h').asString(),
+
 }
 
 

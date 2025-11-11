@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "tsnd --respawn --clear src/app.ts",
     "build": "rimraf ./dist && tsc",
-    "start": "npm run build && node dist/app.js"
+    "start": "npm run build && node dist/app.js",
+    "migrate:make": "npx knex migrate:make --knexfile src/data/postgres/knexfile.ts --env development",
+    "migrate:latest": "npx knex migrate:latest --knexfile src/data/postgres/knexfile.ts --env development"
+
   },
   "keywords": [],
   "author": "",

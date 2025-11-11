@@ -15,3 +15,6 @@ export * from './dtos/book/delete-book.dto'
 
 export * from './dtos/category/update-category.dto'
 export * from './dtos/category/delete-category.dto'
+
+export * from './dtos/loan/create-loan.dto'
+export * from './dtos/loan/return-loan.dto'
