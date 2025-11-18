@@ -29,6 +29,7 @@ export class AuthController {
   };
 
   loginUser = (req: Request, res: Response) => {
+    console.log(req.body);
     const [ error, loginUserDto ] = LoginUserDto.create(req.body);
 
     if ( error ) {
